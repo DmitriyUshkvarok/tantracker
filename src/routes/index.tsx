@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
@@ -6,9 +5,5 @@ export const Route = createFileRoute('/')({
 });
 
 function RouteComponent() {
-  return (
-    <>
-      <Button className="bg-orange-500">Click me</Button>
-    </>
-  );
+  return <></>;
 }

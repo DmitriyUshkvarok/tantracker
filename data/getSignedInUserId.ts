@@ -1,6 +1,6 @@
-import { getAuth } from '@clerk/tanstack-react-start/server';
 import { createServerFn } from '@tanstack/react-start';
-import { getWebRequest } from 'vinxi/http';
+import { getAuth } from '@clerk/tanstack-react-start/server';
+import { getWebRequest } from '@tanstack/react-start/server';
 
 export const getSignedInUserId = createServerFn({
   method: 'GET',
