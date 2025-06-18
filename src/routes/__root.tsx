@@ -26,8 +26,15 @@ import {
   SignUpButton,
   UserButton,
 } from '@clerk/tanstack-react-start';
+import { getSignedInUserId } from '@/data/getSignedInUserId';
 
 export const Route = createRootRoute({
+  beforeLoad: async () => {
+    const userId = await getSignedInUserId();
+    return {
+      userId,
+    };
+  },
   head: () => ({
     meta: [
       {
